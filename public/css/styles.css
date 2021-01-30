@@ -2,19 +2,24 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
-body{
-    background-color: #def3ff;
+
+body {
+    background-color: white;
 }
+
 .navbar-default {
-    background-color: #def3ff;
+    background-color: #ff5ab5f5;
     border-color: #e7e7e7;
 }
+
 .navbar-default .navbar-brand {
     color: #fff;
 }
-.navbar-default .navbar-brand:hover{
-    color: #de8c8c;
+
+.navbar-default .navbar-brand:hover {
+    color: #ffffff;
 }
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -22,24 +27,40 @@ body{
     border-radius: 0;
     margin-bottom: 0;
     font-size: 14px;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
 }
-.navbar-brand:hover {
-    color: #f01111;
-    background-color: transparent;
-}
+
 .navbar-brand {
     padding-top: 20px;
     text-decoration: none;
     font-size: 45px;
 }
 
+.navbar-nav li a {
+    color: white !important;
+    letter-spacing:6px;
+    font-family: 'Ubuntu', sans-serif;
 
-.navbar-nav li a:hover {
-    color: #1abc9c !important;
 }
 
+.navbar-nav li a:hover {
+    color: #82265af5 !important;
+    transition:all 0.5s;
+    font-family: 'Ubuntu', sans-serif;
 
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3175A6;
+    border-color: white;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ff5ab5f5;
+    transition:all 0.5s;
+    border-color: white;
+}
 .composediv {
     position: relative;
     margin-top: 30px;
@@ -91,11 +112,26 @@ body{
 }
 
 a {
-    margin-top:5px;
+    margin-top: 5px;
     font-size: 15px;
 }
 
-@media (max-width :980px) {
+.thep{
+    
+    border-color:#ff5ab5e0;
+    border-width:3px;
+    border-style:solid;
+    border-radius:20px;
+    height:28vh;
+    width:22vw;
+    margin-left:10vw;
+    margin-top:5vh;
+    margin-bottom:5vh;
+    position:relative;
+    display:inline-block;
+}
+
+/*@media (max-width :980px) {
 
     a {
         font-size: 30px;
@@ -230,4 +266,4 @@ a {
         margin-top: 140px;
         margin-left: 70px;
     }
-}
+}*/

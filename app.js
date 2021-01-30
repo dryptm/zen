@@ -61,22 +61,26 @@ app.get("/Consult",function(req,res)
 })
 app.get("/Therapies",function(req,res)
 {
-  res.render("therapies",{contactp:aboutContent})
+  res.render("therapies")
 })
 app.get("/Activities",function(req,res)
 {
-  res.render("activities",{homep:aboutContent})
+  res.render("activities")
 })
 
 app.get("/Music",function(req,res)
 {
-  res.render("music",{homep:homeStartingContent})
+  res.render("music")
   
 })
 
 app.get("/Tests",function(req,res)
 {
-  res.render("test",{aboutp:aboutContent})
+  res.render("test")
+})
+app.get("/Books",function(req,res)
+{
+  res.render("books")
 })
 app.get("/blog",function(req,res)
 {
