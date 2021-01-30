@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+<h1>BLOGs</h1>
+<div class="postdiv">
+    <%posts.forEach(function(post){%>
+        <h3><%=post.blogName%>:</h3>
+        <p><%=post.blogContent.substring(0,50)+" ..."%><a href="/blogs/<%=post._id%>">read more</a>
+            <a href="/delete/<%=post._id%>"  name="img" ><img class="deleteimg"  src="image/delete.svg" ></a>
+        </p>
+    <%})%>
+    <div class="composediv">
+        <form action="/abc" method="POST">
+            <button type="submit" class="btn btn-primary composebtn">Compose</button>
+        </form>
+    </div> 
+    
+</div>
+
+
+
